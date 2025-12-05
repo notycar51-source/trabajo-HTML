@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!--Configuración responsive-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuesto</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <!--Cabecera-->
+  <header>
+      <div class="logo">
+  <a href="index.html">
+    <img src="/img/logo.png" alt="Logo Estudio Creativo">
+  </a>
+</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Portafolio</a></li>
+        <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Contenido principal: formulario-->
+  <main>
+    <h2>Solicite su presupuesto</h2>
+    <form action="#" method="post">
+      <label for="nombre">Nombre o Email:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9,15}">
+
+      <label for="info">Solicite más información:</label>
+      <textarea id="info" name="info" rows="5" required></textarea>
+
+      <label>
+        <input type="checkbox" id="privacidad" name="privacidad" required>
+        Acepto la Política de Privacidad
+      </label>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <!--Pie de página-->
+ <footer>
+  <div class="social">
+    <a href="https://facebook.com" target="_blank">Facebook</a>
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+  </div>
+  <section id="ubicacion">
+  <h2>Ubicación</h2>
+  <img src="/img/mapa.jpg" alt="Mapa de ubicación de la empresa" style="max-width:100%; border:1px solid #ccc; border-radius:8px;">
+  <p>Calle Ejemplo 123, Murcia</p>
+</section>
+  <p><a href="aviso-legal.html">Aviso Legal</a></p>
+</footer>
+</body>
+</html>
